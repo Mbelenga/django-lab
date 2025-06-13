@@ -29,7 +29,7 @@ This repository contains a collection of small projects, code snippets, and prac
 
 - **Language**: Python 3.x
 - **Framework**: Django (latest)
-- **Database**: SQLite (for now)
+- **Database**: SQL (for now)
 - **Tools**: Git, VS Code, Postman
 
 ---
@@ -38,7 +38,7 @@ This repository contains a collection of small projects, code snippets, and prac
 
 ```bash
 # Clone this repo
-git clone https://github.com/your-username/django-lab.git
+git clone https://github.com/Mbelenga/django-lab.git
 cd django-lab
 
 # Create a virtual environment

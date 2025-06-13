@@ -2,7 +2,7 @@
 
 Welcome to **Django Lab** – a personal space where I learn, experiment, and build with the Django web framework.
 
-This repository contains a collection of small projects, code snippets, and practical exercises that help me deepen my understanding of Django. From simple apps to more advanced features, this is my sandbox for growth.
+This repository contains a collection of small projects, code snippets, and practical exercises that help me deepen my understanding of Django. From simple apps to more advanced features, this is my area for growth.
 
 ---
 

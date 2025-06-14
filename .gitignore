@@ -1,0 +1,70 @@
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Django migrations
+*/migrations/*.py
+*/migrations/__pycache__/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Environment variables
+*.env
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
+nosetests.xml
+test_*.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# pipenv/poetry
+Pipfile.lock
+poetry.lock
+
+# Build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node (if you use npm/yarn for frontend assets)
+node_modules/

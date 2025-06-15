@@ -1,7 +1,7 @@
 from django.urls import path
-import . views
+from . import views
 # path allows us to import multiple urls
 
-url patterns = [
+urlpatterns = [
     path('', views.index, name='index')
 ]

@@ -20,8 +20,7 @@ This repository contains a collection of small projects, code snippets, and prac
 - 📁 `01-basic-setup/` – First Django project, setting up the environment
 - 📁 `02-crud-app/` – Simple blog app with Create, Read, Update, Delete
 - 📁 `03-auth-system/` – Custom user authentication and registration
-- 📁 `04-api-basics/` – Building a REST API with Django REST Framework *(Coming Soon)*
-- 📁 More coming as I learn...
+- 📁 `04-api-basics/` – Building a REST API with Django REST Framework
 
 ---
 

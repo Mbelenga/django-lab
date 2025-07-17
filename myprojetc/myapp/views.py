@@ -8,7 +8,7 @@ def index(request):
     feature1.id = 0
     feature1.name = 'Fast'
     feature1.details = 'We Have The Best Services'
-    return render(request, 'index.html')
+    return render(request, 'index.html', 'feature': feature1)
 
 def counter(request):
     text = request.POST['text']

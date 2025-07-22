@@ -14,3 +14,5 @@ def counter(request):
     text = request.POST['text']
     number_of_words = len(text.split())
     return render(request, 'counter.html', {'number': number_of_words})
+
+# Practice

@@ -16,6 +16,7 @@ class Meta:
     We use the ordering attribute to tell Django that it should sort 
     results by the publish field.
     """
+    indexes = [ models.Index(fields=['-publish']), ]
 
 def __str__(self):
     return self.title

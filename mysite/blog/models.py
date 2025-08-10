@@ -2,6 +2,9 @@ from django.db import models
 from django.utilis import timezone
 
 class Post(models.Model):
+    class Status(models.TextChoices):
+        DRAFT = 'DF', 'Draft'
+        PUBLISHED = 'PB', 'Published'
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250)
     body = models.TextField()
@@ -17,12 +20,6 @@ class Meta:
     results by the publish field.
     """
     indexes = [models.Index(fields=['-publish']),]
-
-class Status(models.TextChoices):
-    DRAFT = 'DF', 'Draft'
-    PUBLISHED = 'PB', 'Published'
-    status = models.CharField(max_length=2, choices = Status, default = Status.DRAFT)
-
-
+    
 def __str__(self):
     return self.title

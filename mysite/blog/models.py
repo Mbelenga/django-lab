@@ -11,6 +11,11 @@ class Post(models.Model):
 
 class Meta:
     ordering = ['-publish']
+    """
+    We indicate descending order by using a hyphen before the field name
+    We use the ordering attribute to tell Django that it should sort 
+    results by the publish field.
+    """
 
 def __str__(self):
     return self.title

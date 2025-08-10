@@ -16,7 +16,13 @@ class Meta:
     We use the ordering attribute to tell Django that it should sort 
     results by the publish field.
     """
-    indexes = [ models.Index(fields=['-publish']), ]
+    indexes = [models.Index(fields=['-publish']),]
+
+class Status(models.TextChoices):
+    DRAFT = 'DF', 'Draft'
+    PUBLISHED = 'PB', 'Published'
+    status = models.CharField(max_length=2, choices = Status, default = Status.DRAFT)
+
 
 def __str__(self):
     return self.title

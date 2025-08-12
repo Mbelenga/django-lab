@@ -17,15 +17,15 @@ class Post(models.Model):
     status = models.CharField(max_length=2, choices=Status, default=Status.DRAFT)
 
 
-class Meta:
-    ordering = ['-publish']
-    """
-    We indicate descending order by using a hyphen before the field name
-    We use the ordering attribute to tell Django that it should sort
-    results by the publish field.
-    """
-    indexes = [models.Index(fields=['-publish']),]
+    class Meta:
+        ordering = ['-publish']
+        """
+        We indicate descending order by using a hyphen before the field name
+        We use the ordering attribute to tell Django that it should sort
+        results by the publish field.
+        """
+        indexes = [models.Index(fields=['-publish']),]
 
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title

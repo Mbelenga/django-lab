@@ -5,8 +5,7 @@ from django.conf import settings
 
 class PublishedManager(models.Manager):
     def get_queryset(self):
-        return
-        (super().get_queryset().filter(status=Post.Status.PUBLISHED) )
+        return super().get_queryset().filter(status=Post.Status.PUBLISHED)
 
 
 class Post(models.Model):
@@ -31,7 +30,7 @@ class Post(models.Model):
         default=Status.DRAFT
     )
     objects = models.Manager()
-    published = PublishedManager
+    published = PublishedManager()
 
     class Meta:
         ordering = ['-publish']

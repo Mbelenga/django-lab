@@ -66,5 +66,14 @@ input,textarea {
     background: #ededed;
     border: 0;
     padding: 6px 10px;
-    font
+    font-size: 12px;
+}
+
+input[type=submit] {
+    font-weight:bold;
+    background:#00abff;
+    color:#fff;
+    padding:10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
 }

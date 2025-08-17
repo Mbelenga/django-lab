@@ -1,0 +1,1 @@
+This is a blog site am bulding to develop my skills in django

@@ -1,3 +1,5 @@
 asgiref==3.9.1
 Django==5.2.5
 pycodestyle==2.14.
+sqlarse==0.5.3
+
